@@ -40,4 +40,29 @@ const myFunction = function(){
 
 // myFunction();
 
-console.log(typeof null)
+// console.log(typeof null)
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++
+
+// stack , Heap
+
+//stack(Primitive) , Heap(Non-Primitive)
+
+
+let myYoutubeName = "abcdefgh.com"
+let anotherName = myYoutubeName;
+anotherName = "chai_aur_code"
+
+// console.log(myYoutubeName)
+// console.log(anotherName)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+userTwo.email = "you_i_am@gmail.com"
+console.log(userOne.email)
+console.log(userTwo.email)
