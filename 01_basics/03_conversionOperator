@@ -1,0 +1,24 @@
+let score = "33"
+console.log(typeof(score))
+
+// conversion to number
+let valueInNumber = Number(score);
+console.log(valueInNumber)
+console.log(typeof(valueInNumber))
+
+/* 
+Notes: 
+if score = 33abc --> when converting it to number is give NaN (Not a Number)
+"33" --> 33
+"33abc" --> NaN
+1 --> true / 0 --> false
+*/
+
+// Conversion boolean
+/*
+NOtes: 1 --> true
+0 --> false
+"" --> false
+"Uttam" --> true
+*/
+
