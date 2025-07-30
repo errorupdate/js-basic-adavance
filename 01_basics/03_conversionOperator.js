@@ -1,55 +1,56 @@
-let score = "33"
-// console.log(typeof(score))
-
-// conversion to number
+// === STRING TO NUMBER CONVERSION ===
+let score = "33";
+// typeof(score) is "string"
 let valueInNumber = Number(score);
-// console.log(valueInNumber)
-// console.log(typeof(valueInNumber))
+// typeof(valueInNumber) is "number"
+// If score = "33abc", valueInNumber is NaN
 
-/* 
-Notes: 
-if score = 33abc --> when converting it to number is give NaN (Not a Number)
-"33" --> 33
-"33abc" --> NaN
-1 --> true / 0 --> false
-*/
-
-// Conversion boolean
 /*
-NOtes: 1 --> true
-0 --> false
-"" --> false
-"Uttam" --> true
+  Conversion Examples:
+  "33"      --> 33        (number)
+  "33abc"   --> NaN       (Not a Number)
+  true      --> 1         (number)
+  false     --> 0         (number)
 */
 
-// ********************** OPERATION *****************
-let value = 3
-let negValue = -value
-// console.log(negvalue)
-// console.log(2+2);
-// console.log(2-2);
-// console.log(2*2);
-// console.log(2**3);
-// console.log(2/3);
-// console.log(2%3);
+// === BOOLEAN CONVERSION ===
+// Boolean(1)      --> true
+// Boolean(0)      --> false
+// Boolean("")     --> false (empty string is false)
+// Boolean("Uttam")--> true (non-empty string is true)
 
-let str1 = "hello"
-let str2 = "Uttam"
-let str3 = str1 + str2;
-// console.log(str3);
+// === NUMERIC OPERATIONS ===
+let value = 3;
+let negValue = -value; // negValue = -3
 
-// console.log("1" +2);
-// console.log(1 + "2");
-// console.log("1" + 2 +2);
-// console.log(1 + 2 + "2");
+// Basic arithmetic:
+let add = 2 + 2;      // 4
+let sub = 2 - 2;      // 0
+let mul = 2 * 2;      // 4
+let pow = 2 ** 3;     // 8  (2 to the power of 3)
+let div = 2 / 3;      // ≈0.6666
+let mod = 2 % 3;      // 2
 
-// console.log(+true)
-// console.log(+"")
+// === STRING OPERATIONS & TYPE COERCION ===
+let str1 = "hello";
+let str2 = "Uttam";
+let str3 = str1 + str2; // "helloUttam"
 
-let num1,num2,num3;
-// num1 = num2 = num3 = 2+4;
+// Type coercion in addition:
+let a = "1" + 2;        // "12" (string)
+let b = 1 + "2";        // "12" (string)
+let c = "1" + 2 + 2;    // "122" (leftmost string, rest are strings)
+let d = 1 + 2 + "2";    // "32" (leftmost number, then "3" + "2" = "32")
 
-let gameCounter = 100
-gameCounter++;
-console.log(gameCounter);
+// Unary plus
+let e = +true;   // 1 (converts true to 1)
+let f = +"";     // 0 (empty string to 0)
 
+// === VARIABLE ASSIGNMENT (CHAINED) ===
+let num1, num2, num3;
+// num1 = num2 = num3 = 2 + 4; // (if uncommented, they all get 6)
+
+// === INCREMENT OPERATOR ===
+let gameCounter = 100;
+gameCounter++;  // Increases by 1
+console.log(gameCounter); // OUTPUT: 101
