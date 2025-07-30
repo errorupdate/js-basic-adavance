@@ -1,5 +1,5 @@
 function logResult(expression, result, explanation) {
-    console.log(`${expression} => ${result}  // ${explanation}`);
+    console.table([`${expression} => ${result}  // ${explanation}`]);
 }
 
 // BASIC NUMBER COMPARISONS
